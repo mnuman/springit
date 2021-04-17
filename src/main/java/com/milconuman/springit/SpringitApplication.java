@@ -18,15 +18,4 @@ public class SpringitApplication {
 		System.out.println("Welcome to Springit!");
 	}
 
-	@Bean
-	CommandLineRunner runner() {
-		return args -> {
-			log.error("CommandLineRunner.run()");
-			log.warn("CommandLineRunner.run()");
-			log.info("CommandLineRunner.run()");
-			log.debug("CommandLineRunner.run()");
-			log.trace("CommandLineRunner.run()");
-		};
-	}
-
 }
